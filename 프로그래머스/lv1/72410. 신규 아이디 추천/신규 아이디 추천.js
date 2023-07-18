@@ -1,14 +1,15 @@
-
 function solution(new_id) {
   let newId = new_id.toLowerCase();
   const arrId = [...newId];
-  // 2단계
+  
+    // 2단계
   for (let i = 0; i < arrId.length; i++) {}
   const Id = arrId.filter((item) => {
     if ("a" <= item && item <= "z") return item;
     else if ("0" <= item && item <= "9") return item;
     else if (item == "-" || item == "_" || item == ".") return item;
   });
+    
   // 3단계
   const thirdId = [];
   for (let i = 0; i < Id.length; i++) {
