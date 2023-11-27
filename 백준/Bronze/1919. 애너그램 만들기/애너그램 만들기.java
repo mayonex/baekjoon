@@ -43,14 +43,7 @@ public class Main {
         int deleteCount = 0;
         deleteCount = deleteCount +  (listA.size() - curListA.size())  + (listB.size() - curListB.size());
 
-        Set<Character> uniqueChars = new HashSet<>();
-
-        if (!curListA.isEmpty()) {
-            uniqueChars.addAll(curListA);
-        } else {
-            uniqueChars.addAll(curListB);
-        }
-
+        Set<Character> uniqueChars = new HashSet<>(curListA);
         ArrayList<Character> uniqueList = new ArrayList<>(uniqueChars);
 
 
